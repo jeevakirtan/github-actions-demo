@@ -26,4 +26,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: build docker image
-        run: echo 'building docker image'
+        run: |
+          echo 'building docker image'
+          echo 'image built successfully'
