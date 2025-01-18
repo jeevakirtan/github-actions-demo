@@ -1,0 +1,29 @@
+name: ci-github-actions-demo
+
+on:
+  workflow_dispatch
+
+jobs:
+  code_style:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run-lint
+        run: echo 'running lint....'
+
+  unit_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run unit_tests
+        run: echo 'running unit tests....'
+
+  integration_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run integration tests
+        run: echo 'running integration tests...'
+
+  docker_image_build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build docker image
+        run: echo 'building docker image'
